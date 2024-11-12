@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "DINNext-W01-Condensed";
+    src: url(../assets/fonts/DINNext/DIN-Next-W01-Condensed-Medium.ttf);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-primary-blue);
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner{
+    max-width: 1320px;
+    width: 100%;
+    padding: var(--spacing-large);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.banner__logo-container{
+    color: var(--color-primary-white);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-medium);
+    font-family: "DINNext-W01-Condensed", Arial, Helvetica, sans-serif;
+}
+
+.banner__logo{
+    height: 90px;
+}
+
+.banner__title{
+    font-size: var(--font-size-xxl);
+}
+
+.banner__slogan{
+    font-size: var(--font-size-medium);
+}
+
+.banner__ntg-logo{
+    height: 50px;
+}
+
+.navbar{
+    width: 100%;
+    padding: 0 var(--font-size-large);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-primary-blue);
+    background-color: var(--color-primary-white);
+    font-family: "DINNext-W01-Condensed", Arial, Helvetica, sans-serif;
+    font-size: var(--font-size-large);
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px lightgray;
+}
+
+.navbar__links-container{
+    width: 100%;
+}
+
+.navbar__links-list{
+    max-width: 1320px;
+    width: 100%;
+    padding: var(--spacing-medium) var(--spacing-large);
+    display: flex;
+
+}
+
+.navbar__links-list > li{
+    margin-right: 8px;
+    padding-right: 8px;
+    border-right: 1px solid var(--color-primary-blue);
+}
+
+.navbar__link{
+    color: var(--color-primary-blue);
+} 
+
+.navbar__search-container{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-medium);
+    border: none;
+    background-color: transparent;
+}
+
+.navbar__search-text{
+    color: var(--color-primary-blue);
+    font-family: "DINNext-W01-Condensed", Arial, Helvetica, sans-serif;
+    font-size: var(--font-size-large);
+}
+
+main{
+    width: 100%;
+    padding: var(--spacing-large);
+    background-color: var(--color-primary-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section{
+    max-width: 1320px;
+}
+
+.section-title{
+    padding-bottom: var(--spacing-medium);
+    text-transform: uppercase;
+    font-size: var(--font-size-xxl);
+    font-weight: 300;
+}
+
+.cards{
+    display: flex;
+    gap: var(--spacing-medium);
+    background-color: green;
+}
+
+.card{
+    padding: var(--spacing-medium);
+    width: 275px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-primary-white);
+    background-color: var(--color-secondary-gray);
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: var(--color-primary-blue);
+}
+
+.card__image-container{
+    position: relative;
+    height: 250px;
+}
+
+.card__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__player-nr{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: var(--spacing-medium);
+    left: var(--spacing-medium);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 700;
+    background-color: var(--color-primary-blue);
+}
+
+.card__name{
+    padding: var(--spacing-medium) 0 var(--spacing-small);
+    font-family: "DINNext-W01-Condensed", Arial, Helvetica, sans-serif;
+    font-size: var(--spacing-extra-large);
+}
+
+.card__position{
+    text-transform: uppercase;
+    font-size: var(--font-size-large);
+    font-weight: 300;
+}
+
+.card__details{
+    height: 100%;
+    padding: 0 var(--spacing-medium) var(--spacing-medium) var(--spacing-medium);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-primary-blue);
+}
+
+.card__info-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+    font-size: var(--font-size-medium);
+}
+
+.card__info-container > * {
+    display: flex;    
+    justify-content: space-between;
+}
+
+.nasjonalitet-container,
+.card__fodt-container{
+    padding-bottom: var(--spacing-medium);
+    border-bottom: 2px solid var(--color-primary-white);
+}
