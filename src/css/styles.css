@@ -84,10 +84,8 @@ body {
   display: flex;
 }
 
-.navbar__links-list > li {
-  height: 100%;
-  margin-right: 8px;
-  padding-right: 8px;
+.navbar__links-list > li > a {
+  padding: 0 8px 0 8px;
   border-right: 1px solid var(--color-primary-blue);
 }
 
@@ -96,10 +94,10 @@ body {
 }
 
 .navbar__hamburger {
+  display: none;
   height: 100%;
-  display: flex;
   align-items: center;
-  gap: var(--spacing-small);
+  gap: var(--spacing-medium);
   border: none;
   background-color: transparent;
   color: inherit;
@@ -133,6 +131,7 @@ main {
 }
 
 .section {
+  padding-top: var(--spacing-xxl);
   max-width: 1320px;
   width: 100%;
 }
@@ -154,8 +153,8 @@ main {
 
 .card {
   padding: 20px;
-  max-width: calc(100% / 4 - (var(--gap) / 2));
-  flex-basis: calc(100% / 4 - (var(--gap) / 2));
+  max-width: calc(100% / 4 - (var(--gap)));
+  flex-basis: calc(100% / 4 - (var(--gap)));
   height: 538px;
 
   display: flex;
@@ -178,6 +177,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  /* object-fit: fill; */
   background-color: var(--color-primary-white);
 }
 
@@ -245,6 +245,19 @@ main {
 @media screen and (max-width: 1040px) {
   .banner__ntg-logo {
     display: none;
+  }
+
+  .navbar__container {
+    justify-content: start;
+    gap: var(--spacing-large);
+  }
+
+  .navbar__links-container {
+    display: none;
+  }
+
+  .navbar__hamburger {
+    display: flex;
   }
 
   .card {
