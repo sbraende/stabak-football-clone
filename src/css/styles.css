@@ -62,6 +62,7 @@ body {
 
 .navbar__container {
   width: 100%;
+  padding: var(--spacing-medium) 0;
   max-width: 1320px;
   display: flex;
   align-items: center;
@@ -80,11 +81,11 @@ body {
 .navbar__links-list {
   max-width: 1320px;
   width: 100%;
-  padding: var(--spacing-medium) var(--spacing-large);
   display: flex;
 }
 
 .navbar__links-list > li {
+  height: 100%;
   margin-right: 8px;
   padding-right: 8px;
   border-right: 1px solid var(--color-primary-blue);
@@ -92,6 +93,20 @@ body {
 
 .navbar__link {
   color: var(--color-primary-blue);
+}
+
+.navbar__hamburger {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-small);
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  text-transform: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
 }
 
 .navbar__search-container {
@@ -135,7 +150,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-medium);
-  background-color: green;
 }
 
 .card {
@@ -165,7 +179,6 @@ main {
   height: 100%;
   object-fit: contain;
   background-color: var(--color-primary-white);
-  /* object-position: 0 0; */
 }
 
 .card__player-nr {
@@ -230,6 +243,10 @@ main {
 }
 
 @media screen and (max-width: 1040px) {
+  .banner__ntg-logo {
+    display: none;
+  }
+
   .card {
     flex-basis: calc(100% / 2 - (var(--gap) / 2));
     max-width: calc(100% / 2 - (var(--gap) / 2));
