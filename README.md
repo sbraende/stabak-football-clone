@@ -6,4 +6,4 @@ This website is one of the individual assignments for Høyskolen Kristiania.
 
 Check out the page: https://sbraende-stabak.netlify.app/
 
-![screenshot webpage](src/assets/images/screenshots/screenshot.png)
+![screenshot webpage](src/assets/images/screenshots/presentation.webp)
