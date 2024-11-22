@@ -4,6 +4,6 @@ This project is a design clone of the [Stabæk fotball](https://www.stabak.no/la
 
 This website is one of the individual assignments for Høyskolen Kristiania.
 
-Check out the page: https://sbraende-stabak.netlify.app/
+Check out the page: https://stabak-football-clone.vercel.app/
 
 ![screenshot webpage](src/assets/images/screenshots/presentation.webp)
