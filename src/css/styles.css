@@ -10,6 +10,13 @@ body {
   background-color: var(--color-primary-blue);
 }
 
+.student {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--color-primary-white);
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -300,6 +307,10 @@ footer div > * {
 }
 
 @media screen and (max-width: 1040px) {
+  .student {
+    font-size: 2rem;
+  }
+
   .banner__ntg-logo {
     display: none;
   }
