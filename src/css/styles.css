@@ -35,11 +35,11 @@ body {
 }
 
 .banner__logo-container {
-  color: var(--color-primary-white);
   display: flex;
   align-items: center;
   gap: var(--gap);
   font-family: "DINNext-W01-Condensed", Arial, Helvetica, sans-serif;
+  color: var(--color-primary-white);
 }
 
 .banner__logo {
@@ -113,6 +113,10 @@ body {
 .navbar__link span {
   padding: 0 8px 0 8px;
   border-right: 1px solid var(--color-primary-blue);
+}
+
+.navbar__link--active {
+  border-bottom: 4px solid var(--color-primary-yellow);
 }
 
 .navbar__hamburger {
