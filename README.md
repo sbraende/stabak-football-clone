@@ -25,5 +25,4 @@ git clone https://github.com/sbraende/stabak-football-clone
 cd stabak-football-clone/src
 ```
 
-Github repository: https://github.com/sbraende/stabak-football-clone
-Published webpage: https://stabak-football-clone.vercel.app/
+3. Open `index.html` in your favorite browser to get started.
